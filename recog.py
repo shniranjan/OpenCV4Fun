@@ -5,16 +5,7 @@ import os
 import requests
 from c_pk import *
 from varbles import *
-#dpath = './data'
-#mlr=2 #image multiplier
-#fpath = './gID'
-#images = []
-#classNames = []
-
 myList = os.listdir(fpath)
-
-#url for capturing image from ipcamera
-#url="http://192.168.1.100/capture"
 
 def findEncodings(myList):
     eList = []
@@ -62,11 +53,10 @@ while True:
         faceDis = face_recognition.face_distance(encodeListKnown,encodeFace)
         #print(faceDis) #need to connect webCamFeed
         matchIndex = np.argmin(faceDis)
-        #print(matchIndex)
-        
+                
         if matches[matchIndex]:
             name = classNames[matchIndex]
-            #print(name)
+            
             y1,x2,y2,x1 = faceLoc
             y1,x2,y2,x1 = y1*mlr,x2*mlr,y2*mlr,x1*mlr
             cv2.rectangle(img,(x1,y1),(x2,y2),(0,255,0),1)
@@ -76,7 +66,7 @@ while True:
     
     
     cv2.imshow('Webcam', img)
-    #cv2.waitKey(300)
+    
     #waits and exits if pressed escape key
     if cv2.waitKey(300)== 27:
         exit()
