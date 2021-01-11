@@ -1,35 +1,35 @@
 # OpenCV project for fun
 
-Author: Niranjan Shrestha niranjan@chautari.net
+<b> Author: </b> Niranjan Shrestha niranjan@chautari.net
 
-Prerequisits:
-This sript is written under following environment.
-Python 3.6.17
-Additional python packages
-    opencv-python
-    os
-    pickle
-    gzip
-    requests
-    face_recognition
-    numpy
+<b> Prerequisits: </b> <br>
+This sript is written under following environment. <br>
+Python 3.6.17 <br>
+<b>Additional python packages </b><br><ul>
+   <li> opencv-python </li>
+   <li> os </li>
+   <li> pickle </li>
+   <li> gzip </li>
+   <li> requests </li>
+   <li> face_recognition </li>
+   <li> numpy </li></ul>
     
 
     
-Testing:
+<b>Testing: </b><br>
 Post setting the environment, clone/download the repo.
-Put person's pp-sized pictures inside gID folder with person full name.  At the moment only jpg picture file extension only supported.
+Put person's pp-sized pictures inside gID folder with person full name.  At the moment only jpg picture file extension only supported. <br>
 Ensure to create gID and data folders exists.
-
-Configuration:
+ <br>
+<b>Configuration: </b><br>
 Edit varbles.py file as per your environment.
 The variables are self explanatory.
+ <br> <br>
 
-
-Run the following command
-python recog_encode.py
-
+Run the following command: <br>
+python recog_encode.py <br>
+ <br>
 This will create picture encoding and save in data folder.  Be patient, since it may take a while.
-
-Once completed, now you can run following command and enjoy
+ <br>
+Once completed, now you can run following command and enjoy: <br>
 python recog.py
