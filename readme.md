@@ -20,7 +20,7 @@ Python 3.6.17 <br><br>
 Post setting the environment, clone/download the repo.
 Put person's pp-sized pictures inside gID folder with person full name.  At the moment only jpg picture file extension only supported. <br>
 Ensure to create gID and data folders exists.
- <br>
+ <br><br>
 <b>Configuration: </b><br>
 Edit varbles.py file as per your environment.
 The variables are self explanatory.
