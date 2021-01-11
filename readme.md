@@ -1,4 +1,4 @@
-OpenCV project for fun
+# OpenCV project for fun
 
 Author: Niranjan Shrestha niranjan@chautari.net
 
