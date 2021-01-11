@@ -1,6 +1,7 @@
 import pickle
 import gzip
 import cv2
+import face_recognition
 
 #filename= 'c_object.obj'
 # filename='newDump.pkl'

@@ -1,9 +1,13 @@
 import cv2
-import face_recognition
 import os
-from c_pk import *
-from varbles import *
+import c_pk as cpk
+import varbles as var
 
+images = []
+classNames = []
+
+dpath = var.dpath
+fpath = var.fpath
 myList = os.listdir(fpath)
 
 print('Encoding loading, Please wait.........')
@@ -24,10 +28,12 @@ def findEncodings(imges):
             print("File already encoded")
         else:
             print(f'incoding image #{kk} {myList[kk]}')
-            encode = compute(imge)
-            save(encode, tem_dpath)
+            encode = cpk.compute(imge)
+            cpk.save(encode, tem_dpath)
             encodeList.append(encode)
         kk += 1
     return encodeList
+
+encodeListKnown = findEncodings(images)
 
 print('Encoding Complete')

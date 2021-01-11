@@ -12,8 +12,4 @@ mlr=2 #image multiplier
 #url for ipcamera, edid as per your need
 url="http://192.168.1.100/capture"
 
-#Do not touch beyound this unless you are sure
-images = []
-classNames = []
-
 

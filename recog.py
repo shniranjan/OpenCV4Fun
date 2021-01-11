@@ -3,9 +3,17 @@ import numpy as np
 import face_recognition
 import os
 import requests
-from c_pk import *
-from varbles import *
-myList = os.listdir(fpath)
+import c_pk as cpk
+import varbles as var
+
+myList = os.listdir(var.fpath)
+dpath = var.dpath
+fpath = var.fpath
+mlr = var.mlr
+url=var.url
+images = []
+classNames = []
+
 
 def findEncodings(myList):
     eList = []
@@ -17,7 +25,7 @@ def findEncodings(myList):
         tem_dpath=f'{dpath}/{fpkl}'
         if os.path.isfile(tem_dpath):
             print(f'Encode loading from {tem_dpath}.....')
-            encode=load(tem_dpath)
+            encode=cpk.load(tem_dpath)
             eList.append(encode)
         else:
             print(f'{im} file is not encoded.')
