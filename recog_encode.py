@@ -4,10 +4,6 @@ import os
 from c_pk import *
 from varbles import *
 
-#dpath = './data'
-#fpath = './gID'
-#images = []
-#classNames = []
 myList = os.listdir(fpath)
 
 print('Encoding loading, Please wait.........')
@@ -17,12 +13,6 @@ for cl in myList:
         images.append(curImg)
         classNames.append(os.path.splitext(cl)[0])
 
-'''
-def compute(imge):
-    img = cv2.cvtColor(imge, cv2.COLOR_BGR2RGB)
-    encode = face_recognition.face_encodings(img)[0]
-    return encode
-'''
 def findEncodings(imges):
     encodeList = []
     kk=0
@@ -39,8 +29,5 @@ def findEncodings(imges):
             encodeList.append(encode)
         kk += 1
     return encodeList
-
-#encodeListKnown = findEncodings(images)
-#save(encodeListKnown)
 
 print('Encoding Complete')
