@@ -19,6 +19,7 @@ Additional python packages
 Testing:
 Post setting the environment, clone/download the repo.
 Put person's pp-sized pictures inside gID folder with person full name.  At the moment only jpg picture file extension only supported.
+Ensure to create gID and data folders exists.
 
 Configuration:
 Edit varbles.py file as per your environment.
