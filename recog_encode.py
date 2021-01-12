@@ -1,13 +1,11 @@
 import cv2
 import os
-import c_pk as cpk
-import varbles as var
+from c_pk import compute, save
+from varbles import dpath, fpath
 
 images = []
 classNames = []
 
-dpath = var.dpath
-fpath = var.fpath
 myList = os.listdir(fpath)
 
 print('Encoding loading, Please wait.........')
@@ -28,8 +26,8 @@ def findEncodings(imges):
             print("File already encoded")
         else:
             print(f'incoding image #{kk} {myList[kk]}')
-            encode = cpk.compute(imge)
-            cpk.save(encode, tem_dpath)
+            encode = compute(imge)
+            save(encode, tem_dpath)
             encodeList.append(encode)
         kk += 1
     return encodeList
