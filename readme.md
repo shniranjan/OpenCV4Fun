@@ -17,7 +17,9 @@ Python 3.6.17 <br><br>
 
     
 <b>Testing: </b><br>
-Post setting the environment, clone/download the repo.
+Post setting the environment, clone/download the repo.  Use following command:<br>
+git clone https://github.com/shniranjan/OpenCV4Fun <br>
+
 Put person's pp-sized pictures inside gID folder with person full name.  At the moment only jpg picture file extension only supported. <br>
 Ensure to create gID and data folders exists.
  <br><br>
