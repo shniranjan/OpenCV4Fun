@@ -4,7 +4,7 @@
 <b> Version: </b> 0.0.01 <br>
 
 <b> Prerequisits: </b> <br>
-This sript is written under following environment. <br>
+This script is written under following environment. <br>
 Python 3.6.17 <br><br>
 <b>Additional python packages </b><br><ul>
    <li> opencv-python </li>
