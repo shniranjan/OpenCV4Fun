@@ -1,6 +1,7 @@
 # OpenCV project for fun
 
-<b> Author: </b> Niranjan Shrestha niranjan@chautari.net
+<b> Author: </b> Niranjan Shrestha niranjan@chautari.net <br>
+<b> Version: </b> 0.0.01 <br>
 
 <b> Prerequisits: </b> <br>
 This sript is written under following environment. <br>
@@ -13,9 +14,9 @@ Python 3.6.17 <br><br>
    <li> requests </li>
    <li> face_recognition </li>
    <li> numpy </li></ul>
-    
 
-    
+
+
 <b>Testing: </b><br>
 Post setting the environment, clone/download the repo.  Use following command:<br>
 git clone https://github.com/shniranjan/OpenCV4Fun <br>
