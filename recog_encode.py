@@ -6,14 +6,18 @@ from varbles import dpath, fpath
 images = []
 classNames = []
 
-myList = os.listdir(fpath)
+if not os.path.exists(dpath):
+    os.makedirs(dpath)
 
-print('Encoding loading, Please wait.........')
+if os.path.exists(fpath):    
+    myList = os.listdir(fpath)
 
-for cl in myList:
-        curImg = cv2.imread(f'{fpath}/{cl}')
-        images.append(curImg)
-        classNames.append(os.path.splitext(cl)[0])
+    print('Encoding loading, Please wait.........')
+
+    for cl in myList:
+            curImg = cv2.imread(f'{fpath}/{cl}')
+            images.append(curImg)
+            classNames.append(os.path.splitext(cl)[0])
 
 def findEncodings(imges):
     encodeList = []
